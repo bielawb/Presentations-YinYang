@@ -11,10 +11,13 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="0" Margin="10" Grid.ColumnSpan="2" TextAlignment="Center" FontFamily="Anonymous Pro for PowerLine" FontSize="50">
+            <TextBlock.Effect>
+                <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
+            </TextBlock.Effect>
         PowerShell Yin-Yang
         </TextBlock>
         <Image Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Source="c:\users\bartek\pictures\prezentacje\wguisw\YinYang.png" Height="400">

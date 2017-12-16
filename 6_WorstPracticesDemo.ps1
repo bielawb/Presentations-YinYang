@@ -19,7 +19,7 @@ $xml -replace '(?<=<user>).*(?=</user>)', 'Domain\MrBeans'
 #region yes, yes, yes!
 $element = Select-Xml -XPath //ad/user -Xml ([xml]$xml)
 # XPath //user same effect - in XML/XPath size does matter
-$element.Node.InnerText = 'Domena\MrBeans'
+$element.Node.InnerText = 'Domain\MrBeans'
 $element.Node.OwnerDocument.OuterXml
 #endregion
 
@@ -115,7 +115,7 @@ if ($path -match '^\\\\') {
     $unc = $true
 }
 
-# ale...
+# but...
 $unc = $path -match '^\\\\'
 $unc = $path -like '\\*'
 
@@ -170,11 +170,11 @@ E
 
 #region ouch!
 Send-MailMessage -From bartek.bielawski@live.com `
-    -To jaap@brasser.com `
-    -Subject 'PS Conf Asia - here I come!' `
+    -To TobiasPSP@psconf.eu `
+    -Subject 'PS Conf EU - here I come!' `
     -Body @'
 
-    Hi Jaap!
+    Hi Tobias!
 
     As promised - I'm here!
 '@ `
@@ -184,11 +184,11 @@ Send-MailMessage -From bartek.bielawski@live.com `
 #region splatting
 $splattedParameters = @{
     From = 'bartek.bielawski@live.com'
-    To = 'jaap@brasser.com'
-    Subject = 'PS Conf Asia - here I come!'
+    To = 'TobiasPSP@psconf.eu'
+    Subject = 'PS Conf EU - here I come!'
     Body = @'
 
-    Hi Jaap!
+    Hi Tobias!
 
     As promised - I'm here!
 '@

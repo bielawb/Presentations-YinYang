@@ -12,18 +12,21 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="0" Margin="10" Grid.ColumnSpan="2" TextAlignment="Center" FontFamily="Anonymous Pro for PowerLine" FontSize="100">
+        <TextBlock Grid.Column="0" Margin="10" Grid.ColumnSpan="2" TextAlignment="Center" FontFamily="Anonymous Pro for PowerLine" FontSize="50">
+        <TextBlock.Effect>
+            <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
+        </TextBlock.Effect>
         Tips &amp; Tricks
         </TextBlock>
-        <Image Grid.Column="0" Grid.Row="1" Source="C:\Users\Bartek\Pictures\Prezentacje\WGUiSW\Drobne_Triki_P.png" Width="900">
+        <Image Grid.Column="0" Grid.Row="1" Source="C:\Users\Bartek\Pictures\Prezentacje\WGUiSW\Drobne_Triki_P.png" >
              <Image.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </Image.Effect>
         </Image>
-        <TextBlock Grid.Column="1" Grid.Row="1" Margin="10" TextAlignment="Center" VerticalAlignment="Center" FontFamily="Anonymous Pro for PowerLine Bold" FontSize="400">
+        <TextBlock Grid.Column="1" Grid.Row="1" Margin="10" TextAlignment="Left" VerticalAlignment="Center" FontFamily="Anonymous Pro for PowerLine Bold" FontSize="400">
             <TextBlock.Effect>
                 <DropShadowEffect ShadowDepth="10" Direction="330" Color="Black" Opacity="0.5" BlurRadius="4"/>
             </TextBlock.Effect>

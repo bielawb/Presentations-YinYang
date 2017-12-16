@@ -58,7 +58,7 @@ ls | ? le* -gt 4KB
 
 # foreach with method and parameters...
 'foo' | % rep* o a
-[regex]'(?<=\b)\w' | % rep* 'my awesome title' { $args[0].Value.ToUpper() }
+[regex]'(?<=\b)\w' | % Replace 'my awesome title' { $args[0].Value.ToUpper() }
 
 # Why stop there... ;)
 [regex]'(?<=\b)\w' | % re* 'my awesome title' { $args | % v* | % *per }
