@@ -21,7 +21,7 @@
             </TextBlock.Effect>
             <TextBlock.Text>The Worst Practices</TextBlock.Text>
         </TextBlock>
-        <Image Grid.Column="0" Grid.Row="1" Source="D:\PowerShell\Prezentacje\PSConfEU\YinYang\Zle_Praktyki_P.png" >
+        <Image Grid.Column="0" Grid.Row="1" Source="D:\PowerShell\Prezentacje\PSConfEU\YinYang\Worst_Practice_Pawel.png" >
              <Image.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </Image.Effect>
