@@ -21,7 +21,7 @@
         </TextBlock.Effect>
         Tips &amp; Tricks
         </TextBlock>
-        <Image Grid.Column="0" Grid.Row="1" Source="C:\Users\Bartek\Pictures\Prezentacje\WGUiSW\Drobne_Triki_P.png" >
+        <Image Grid.Column="0" Grid.Row="1" Source="D:\PowerShell\Prezentacje\PSConfEU\YinYang\Drobne_Triki_P.png" >
              <Image.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </Image.Effect>

@@ -21,7 +21,7 @@
         </TextBlock.Effect>
         <TextBlock.Text>Plan for today...</TextBlock.Text>
         </TextBlock>
-        <Image Grid.Column="0" Grid.Row="1" Source="c:\users\bartek\pictures\prezentacje\wguisw\YinYang.png">
+        <Image Grid.Column="0" Grid.Row="1" Source="D:\PowerShell\Prezentacje\PSConfEU\YinYang\PowerShellYinYang.png">
              <Image.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </Image.Effect>

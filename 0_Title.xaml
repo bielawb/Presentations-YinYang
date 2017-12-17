@@ -20,7 +20,7 @@
             </TextBlock.Effect>
         PowerShell Yin-Yang
         </TextBlock>
-        <Image Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Source="c:\users\bartek\pictures\prezentacje\wguisw\YinYang.png" Height="400">
+        <Image Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Source="D:\PowerShell\Prezentacje\PSConfEU\YinYang\PowerShellYinYang.png" Height="400">
             <Image.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </Image.Effect>
