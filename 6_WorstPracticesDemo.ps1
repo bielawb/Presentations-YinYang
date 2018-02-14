@@ -24,8 +24,8 @@ $element.Node.OwnerDocument.OuterXml
 #endregion
 
 #region links
-Start-Process http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454
-Start-Process https://meta.stackexchange.com/questions/18382/help-design-our-stack-overflow-t-shirts/35432#35432
+Start-Process http://bit.ly/HeComesXml
+Start-Process http://bit.ly/HeComesTShirt
 #endregion
 #endregion
 
@@ -284,6 +284,19 @@ function Get-Return {
 }
 
 'foo', 'bar', 'broken', 'somethingElse' | Get-Return | ForEach-Object { 'I got: {0}' -f $_ }
+
+
+#endregion
+
+#region What if... Hi, I'm Dory!
+
+#region Thou shalt not change the system
+Get-SmbShare -Name Temp
+New-SmbShare -Path C:\temp -Name Temp -WhatIf
+Get-SmbShare -Name Temp
+#endregion
+
+#region Thou shalt be specific
 
 
 #endregion
