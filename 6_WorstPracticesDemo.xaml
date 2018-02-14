@@ -8,20 +8,20 @@
     <Grid Margin="10,40,10,10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="0" Margin="10" Grid.ColumnSpan="2" TextAlignment="Center" FontFamily="Anonymous Pro for PowerLine" FontSize="50">
+        <TextBlock Grid.Column="1" Margin="10" TextAlignment="Center" FontFamily="Anonymous Pro for PowerLine" FontSize="50">
             <TextBlock.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </TextBlock.Effect>
             <TextBlock.Text>The Worst Practices</TextBlock.Text>
         </TextBlock>
-        <Image Grid.Column="0" Grid.Row="1" Source="D:\PowerShell\Prezentacje\PSConfEU\YinYang\Worst_Practice_Pawel.png" >
+        <Image Grid.Column="0" Grid.RowSpan="3" Source="D:\PowerShell\Prezentacje\PSConfEU\YinYang\Worst_Practice_Pawel.png" >
              <Image.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </Image.Effect>
@@ -33,7 +33,7 @@
             <TextBlock.Text>DEMO</TextBlock.Text>
         </TextBlock>
 
-        <TextBlock Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" FontSize="20" TextAlignment="Center" FontFamily="Anonymous Pro for PowerLine Italic" Margin="30,30,30,30">
+        <TextBlock Grid.Column="1" Grid.Row="2" FontSize="20" TextAlignment="Center" FontFamily="Anonymous Pro for PowerLine Italic" Margin="30,30,30,30">
         PowerShell Yin-Yang: the worst practices and tips&amp;tricks
         </TextBlock>
     </Grid>

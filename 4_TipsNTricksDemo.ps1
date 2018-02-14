@@ -103,3 +103,13 @@ Get-ChildItem -Path C:\temp -PipelineVariable filetje -File |
     Format-Table
 
 #endregion
+
+#region Caret and dollar
+.\BrokenScript.ps1 -Id 13
+sbp $^ 7
+.\BrokenScript.ps1 -Id 13
+
+gps | select Name, Id, VM | epcsv -not C:\Users\Bartek\Documents\process.csv
+ii $$
+
+#endregion

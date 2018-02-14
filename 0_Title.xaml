@@ -10,23 +10,22 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="4*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="0" Margin="10" Grid.ColumnSpan="2" TextAlignment="Center" FontFamily="Anonymous Pro for PowerLine" FontSize="50">
+        <TextBlock Grid.Column="1" Margin="10" TextAlignment="Center" FontFamily="Anonymous Pro for PowerLine" FontSize="150" TextWrapping="WrapWithOverflow" VerticalAlignment="Center">
             <TextBlock.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </TextBlock.Effect>
         PowerShell Yin-Yang
         </TextBlock>
-        <Image Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Source="D:\PowerShell\Prezentacje\PSConfEU\YinYang\PowerShellYinYang.png" Height="400">
+        <Image Grid.Column="0" Grid.RowSpan="2" Source="D:\PowerShell\Prezentacje\PSConfEU\YinYang\PowerShellYinYang.png">
             <Image.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </Image.Effect>
         </Image>
         <TextBlock 
-            Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" 
+            Grid.Column="1" Grid.Row="1" 
             FontSize="30" FontFamily="Anonymous Pro for PowerLine Italic"
             TextAlignment="Center" Margin="30,30,30,30"
         >
