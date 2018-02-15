@@ -1,0 +1,7 @@
+stages:
+  - test
+variables:
+  GIT_SSL_NO_VERIFY: "true"
+Test:
+  stage: test
+  script: Write-Host 'It worked!'
