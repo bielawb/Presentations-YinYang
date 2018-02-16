@@ -1,4 +1,8 @@
-﻿#region Regex hammer in hand - see nails everywhere
+﻿#region DPS
+throw "Hey, Dory! Forgot to use F8?"
+#endregion
+
+#region Regex hammer in hand - see nails everywhere
 $xml = @'
 <xml>
     <ad>
@@ -141,8 +145,7 @@ Get-Service -DisplayName Application* | ForEach-Object `
 Get-Service `
 | ForEach-Object `
 {
-    $_`
-    .Name
+    $_.Name
 }
 #endregion
 

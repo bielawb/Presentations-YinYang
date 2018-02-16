@@ -1,4 +1,8 @@
-﻿#region assign result of condition to variable
+﻿#region DPS
+throw "Hey, Dory! Forgot to use F8?"
+#endregion
+
+#region assign result of condition to variable
 $logicalCondition = $true -eq 'False'
 $result = if ($logicalCondition) {
     'true'
@@ -111,5 +115,31 @@ sbp $^ 7
 
 gps | select Name, Id, VM | epcsv -not C:\Users\Bartek\Documents\process.csv
 ii $$
+
+#endregion
+
+#region git alias it is!
+
+$gitAliases = 
+    (git config --global -l).Where{ 
+            $_ -match '^alias\.'
+        }.ForEach{
+            $_ -replace '^alias\.(\w+).*', '$1'
+        }
+
+$ExecutionContext.InvokeCommand.CommandNotFoundAction = { 
+    param ($name, $eventArgs) 
+    if ($name -in $gitAliases) { 
+        $alias = $name
+    } elseif ($aliases = $gitAliases -match [regex]::Escape($name)) { 
+        $alias = $aliases | 
+            Sort-Object -Property Length  | 
+            Select-Object -First 1 
+    } 
+    
+    if ($alias) { 
+        $eventArgs.CommandScriptBlock = { git $alias @args }.GetNewClosure()
+    } 
+}
 
 #endregion

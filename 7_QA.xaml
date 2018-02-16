@@ -19,7 +19,7 @@
             </TextBlock.Effect>
             <TextBlock.Text>Q&#160;&amp;&#160;A</TextBlock.Text>
         </TextBlock>
-        <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Source="D:\PowerShell\Prezentacje\PSConfEU\YinYang\Question.png" >
+        <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Source="Question.png" >
             <Image.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </Image.Effect>
