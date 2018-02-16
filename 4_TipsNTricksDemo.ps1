@@ -142,4 +142,13 @@ $ExecutionContext.InvokeCommand.CommandNotFoundAction = {
     } 
 }
 
+hai
+gimmeh origin master
+
+Set-Content -Path .\Test.txt -Value 'Some text' -Encoding Ascii
+
+uppin .\Test.txt
+awsum -m 'Adding/removing Test.txt'
+kthx
+
 #endregion

@@ -6,18 +6,20 @@ $splatXml = @{
 
 Describe 'Testing XAML syntax for potential issues' {
     foreach ($xamlFile in Get-ChildItem -Path .\*.xaml) {
-        It "File $($xamlFile.Name) contains valid XML" {
-            $xml = [xml]::new()
-            try {
-                $xml.Load($xamlFile.FullName)
-            } catch {
-                $exception = $_.Exception
+        Context "Testing $($xamlFile.Name)" {
+            It 'File contains valid XML' {
+                $xml = [xml]::new()
+                try {
+                    $xml.Load($xamlFile.FullName)
+                } catch {
+                    $exception = $_.Exception
+                }
+                $exception.Message | Should BeNullOrEmpty
             }
-            $exception.Message | Should BeNullOrEmpty
-        }
-        It "Given $($xamlFile.Name) contains image, file exists" {
-            Select-Xml -Path $xamlFile.FullName @splatXml -XPath "//wpf:Image" |
-                ForEach-Object { $_.Node.Source } | Should Exist 
+            It "Given XAML file contains image, file exists" {
+                Select-Xml -Path $xamlFile.FullName @splatXml -XPath "//wpf:Image" |
+                    ForEach-Object { $_.Node.Source } | Should Exist 
+            }
         }
     }
 }
