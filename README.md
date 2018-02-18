@@ -20,3 +20,5 @@ Content
 - broken promises
 - broken code
 - what if... oh, wait!?
+
+[![build status](https://git.powershellpl.net/bielawb/PSConfEU18-YinYang/badges/master/build.svg)](https://git.powershellpl.net/bielawb/PSConfEU18-YinYang/commits/master)
