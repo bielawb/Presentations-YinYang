@@ -33,7 +33,8 @@
             <TextBlock FontSize="35" FontFamily="Anonymous Pro for PowerLine">➠ golfish % and ?</TextBlock>
             <TextBlock FontSize="35" FontFamily="Anonymous Pro for PowerLine">➠ 1st come, 1st serve</TextBlock>
             <TextBlock FontSize="35" FontFamily="Anonymous Pro for PowerLine">➠ AwesomeVariable</TextBlock>
-            <TextBlock FontSize="35" FontFamily="Anonymous Pro for PowerLine">➠ Carets and dollars</TextBlock>
+            <TextBlock FontSize="35" FontFamily="Anonymous Pro for PowerLine">➠ carets and dollars</TextBlock>
+            <TextBlock FontSize="35" FontFamily="Anonymous Pro for PowerLine">➠ can has git alias?</TextBlock>
         </StackPanel>
         <TextBlock Grid.Column="1" Grid.Row="2" FontSize="20" TextAlignment="Center" FontFamily="Anonymous Pro for PowerLine Italic" Margin="30,30,30,30">
         PowerShell Yin-Yang: the worst practices and tips&amp;tricks

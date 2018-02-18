@@ -4,4 +4,4 @@ variables:
   GIT_SSL_NO_VERIFY: "true"
 Test:
   stage: test
-  script: Invoke-Pester -EnableExit
+  script: Invoke-Pester -EnableExit -Script .\Tests\

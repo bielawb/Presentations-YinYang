@@ -118,7 +118,7 @@ ii $$
 
 #endregion
 
-#region git alias it is!
+#region can has git alias?
 
 $gitAliases = 
     (git config --global -l).Where{ 
