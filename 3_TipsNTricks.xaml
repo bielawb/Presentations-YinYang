@@ -29,7 +29,7 @@
         <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="20,20,20,20">
             <TextBlock FontSize="35" FontFamily="Anonymous Pro for PowerLine">➠ loops</TextBlock> 
             <TextBlock FontSize="35" FontFamily="Anonymous Pro for PowerLine">➠ last of us</TextBlock>
-            <TextBlock FontSize="35" FontFamily="Anonymous Pro for PowerLine">➠ where?</TextBlock>
+            <TextBlock FontSize="35" FontFamily="Anonymous Pro for PowerLine">➠ dot where, dot foreach</TextBlock>
             <TextBlock FontSize="35" FontFamily="Anonymous Pro for PowerLine">➠ golfish % and ?</TextBlock>
             <TextBlock FontSize="35" FontFamily="Anonymous Pro for PowerLine">➠ 1st come, 1st serve</TextBlock>
             <TextBlock FontSize="35" FontFamily="Anonymous Pro for PowerLine">➠ AwesomeVariable</TextBlock>

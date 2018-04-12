@@ -54,6 +54,19 @@ $first, $second = $collection.Where(
 
 #endregion
 
+#region New syntax with .foreach
+$cim
+Get-DnsServerZone -Name *.168.192.in-addr.arpa -CimSession $cim
+Get-DnsServerZone -Name (1,7,15).ForEach{"$_.168.192.in-addr.arpa"} -CimSession $cim
+
+Get-DnsServerResourceRecord -Name 20* -ZoneName 7.168.192.in-addr.arpa -CimSession $cim
+Get-DnsServerResourceRecord -Name (200..203) -ZoneName 7.168.192.in-addr.arpa -CimSession $cim
+(200..203).ForEach{ Get-DnsServerResourceRecord -Name $_ -ZoneName 7.168.192.in-addr.arpa -CimSession $cim }
+
+Get-Service (echo mgmt RM).ForEach{"Win$_"}
+Get-Service Win*
+#endregion
+
 #region Where-Object/Foreach-Object 
 
 # can take wildcards... 
