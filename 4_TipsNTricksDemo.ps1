@@ -134,6 +134,8 @@ ii $$
 
 #region can has git alias?
 
+Start-Process -FilePath https://en.wikipedia.org/wiki/LOLCODE
+
 $gitAliases = 
     (git config --global -l).Where{ 
             $_ -match '^alias\.'
