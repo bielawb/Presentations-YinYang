@@ -70,7 +70,7 @@ Get-Service Win*
 #region Where-Object/Foreach-Object 
 
 # can take wildcards... 
-ls | % a*
+ls | % at*
 ls | ? le* -gt 4KB
 
 # foreach with method and parameters...
@@ -83,19 +83,19 @@ ls | ? le* -gt 4KB
 #endregion
 
 #region First come, first serve....
-if ($true -or $(Start-Sleep -Seconds 1; $true)) {
+if ($true -or $(Start-Sleep -Seconds 3; $true)) {
     'True!'
 }
 
-if ($(Start-Sleep -Seconds 1; $true) -or $true) {
+if ($(Start-Sleep -Seconds 3; $true) -or $true) {
     'False!'
 }
 
-if ($false -and $(Start-Sleep -Seconds 1; $false)) {
+if ($false -and $(Start-Sleep -Seconds 3; $false)) {
     'False!'
 }
 
-if ($(Start-Sleep -Seconds 1; $false) -and $false) {
+if ($(Start-Sleep -Seconds 3; $false) -and $false) {
     'False!'
 }
 #endregion
@@ -110,13 +110,14 @@ $myError[0].Exception.Message
 Get-ChildItem -Path C:\temp -PipelineVariable filetje -File |
     Get-Acl -PipelineVariable acltje |
     ForEach-Object Access |
-    Select-Object FileSystemRights, IdentityReference, @{
-        Name = 'The Path'
-        Expression = { $filetje.FullName }
-    }, @{
+    Select-Object FileSystemRights, IdentityReference, 
+    @{
         Name = 'The Owner'
-        Expression = { $acltje.Owner }
-    } -First 5 |
+        Expression = { $acltje.Owner -replace '^.*\\' }
+    }, @{
+        Name = 'The Name'
+        Expression = { $filetje.Name }
+    }  -First 10 |
     Format-Table
 
 #endregion
@@ -163,5 +164,12 @@ Set-Content -Path .\Test.txt -Value 'Some text' -Encoding Ascii
 uppin .\Test.txt
 awsum -m 'Adding/removing Test.txt'
 kthx
+
+Set-Content -Path .\Test.txt -Value 'Some other text' -Encoding Ascii
+hai
+plz
+uppin *
+onoes
+kthxbye
 
 #endregion

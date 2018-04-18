@@ -299,9 +299,4 @@ New-SmbShare -Path C:\temp -Name Temp -WhatIf
 Get-SmbShare -Name Temp
 #endregion
 
-#region Thou shalt be specific
-
-#endregion
-
-
 #endregion
